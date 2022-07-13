@@ -1,0 +1,170 @@
+<html>
+
+
+<body>
+
+<section class="header">
+<div id="main">
+    
+        <div id="mySidenav" class="sidenav">
+        <nav>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="https://www.twitter.com/WandererSilent"><img src="images/twitter.png" height="50px" width="50px"> </a>
+        <a href="https://www.stackoverflow.com/users/15145260/joshh"><img src="images/stack.png" height="50px" width="50px"></a>
+        <a href="https://www.github.com/joshuaquarcoonii1"><img src="images/hub.png" height="50x" width="50px"></a>
+        
+        <a href="https://www.linkedin/in/joshua-quarcoo-091a3a1bb"><img src="images/link.png"  height="50x" width="50px"></a>
+        </nav>
+        
+        
+        </div>
+        
+        
+  </div>
+</section>
+<div class="text-box">
+  <img src="images/me.jpg" height="120px" width="120px"><br>
+  
+   <a  href="#" onclick="openNav()">My Links</a>
+</div>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+<style>
+  body{
+    background-color:  #818181;
+  }
+  img{
+    border-radius: 50%;
+    
+  }
+  .header{
+    min-height:100vh;
+    width: 100%;
+background-image:linear-gradient(rgba(26, 65, 219, 0.7),rgba(21, 61, 223, 0.7)),url(images/Screenshot\ \(49\).png);
+background-position:center;
+background-size:cover;
+position:relative;}
+.text-box{
+    width: 90%;
+    color:rgb(235, 71, 6);
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+}
+.text-box a{
+  color:rgb(252, 243, 239);
+    text-decoration:none;
+    font-size:18px;
+}
+.text-box a::after{
+  content:'';
+    width:0%;
+    height:2px;
+    background:#faf9f9;
+    display:block;
+    margin:auto;
+    transition:0.5s;
+}
+.text-box a:hover::after{
+  width:5%;
+
+}
+    .sidenav {
+  height: 50%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+
+
+
+<script>
+    /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "150px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
